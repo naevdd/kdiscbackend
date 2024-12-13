@@ -87,7 +87,7 @@ const updateGoogleSheet = async (formData) => {
     // Check if headers exist
     const getResponse = await sheets.spreadsheets.values.get({
       spreadsheetId,
-      range: 'Sheet1!A1:U1',
+      range: 'Sheet1!A1:V1',
     });
 
     const dataExists = getResponse.data.values && getResponse.data.values.length > 0;
